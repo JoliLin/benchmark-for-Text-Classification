@@ -48,36 +48,3 @@ class rt_data:
 		test_y = y[:test_len]
 
 		return (train_x, train_y), (test_x, test_y)
-
-'''	 
-if __name__ == '__main__':
-	#path = sys.argv[1]
-	path = '/home/zllin/torch_exp_flow/dataset/rt-polarity.all'
-	
-	(train_x, train_y), (test_x, test_y) = rt_data(path).load_data()
-
-	print(len(train_x[0]))
-	
-		
-	from sklearn.feature_extraction.text import CountVectorizer
-	data = open(path, encoding='utf-8', errors='ignore').readlines()
-	np.random.seed(0)		
-	np.random.shuffle(data)
-
-	y = deque()
-	x = deque()
-
-	for i in data:
-		y_, x_ = i.split( ' ', 1 )
-		
-		x.append(x_)
-		y.append(int(y_))
-
-
-	vec = CountVectorizer()
-	x = vec.fit_transform(x)
-	for i in x:
-		i.toarray()
-	print(len(x.toarray()[0]))
-	print(len(vec.get_feature_names()))
-'''
