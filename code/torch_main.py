@@ -54,5 +54,5 @@ def main_process( data, classes):
 	
 	RUN( models.MLP(16, classes), data, 'MLP.pt' )
 	RUN( models.CNN(classes=classes, embed_size=64), data, 'CNN.pt' )
-	RUN( models.MultiHeadAtt(8, 64, 4, classes=classes), data, 'attention.pt' )
+	RUN( models.MultiHeadAtt(2, 16, 2, classes=classes), data, 'attention.pt' )
 
