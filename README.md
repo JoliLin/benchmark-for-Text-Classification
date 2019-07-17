@@ -13,15 +13,23 @@ Requirement
 
 Model
 ----
-+ Single Layer Perceptron
-+ Convolutional Neural Network
-+ Multi-Head Attention
++ Single Layer Perceptron (MLP)
++ Convolutional Neural Network (CNN)
++ Multi-Head Attention (MultiHeadAttn)
 
 
 Dataset
 ----
 + Keras.imdb
 + rt-polarity
+
+
+Result
+----
+| Accuracy      | MLP           | CNN           | MultiHeadAttn |
+| ------------- | ------------- | ------------- | ------------- |
+| imdb          | 0.8658        | 0.82792       | 0.78408       |
+| rt-polarity   | 0.7378        | 0.65759       | 0.64446       |
 
 
 Usage
