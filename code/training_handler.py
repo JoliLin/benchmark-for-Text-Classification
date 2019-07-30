@@ -21,7 +21,7 @@ class handler:
 		self.hist = dict()
 
 	def device_setting( self, gpu=1 ):
-		return 'cpu 'if gpu == -1 else 'cuda:{}'.format(gpu)
+		return 'cpu' if gpu == -1 else 'cuda:{}'.format(gpu)
 
 	def print_hist( self ):
 		string = '===> '
